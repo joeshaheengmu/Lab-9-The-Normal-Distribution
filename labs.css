@@ -1,0 +1,86 @@
+body {
+  font-family: 'Roboto', serif;
+  counter-reset: li; /* initialize counter named li */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+boh1 {
+  font-weight:bold;
+}
+
+h2 {
+  font-weight:bold;
+  margin-top: 24px;
+}
+
+:not(.footnotes) > ol {
+  margin-left:0; /* Remove the default left margin */
+  padding-left:0; /* Remove the default left padding */
+}
+
+:not(.footnotes) > ol > li {
+  position:relative; /* Create a positioning context */
+  margin:0 0 10px 2em; /* Give each list item a left margin to make room for the numbers */
+  padding:10px 80px; /* Add some spacing around the content */
+  list-style:none; /* Disable the normal item numbering */
+  border-top:2px solid #FFCC33;
+  background:rgba(30, 98, 56, 0.1);
+}
+
+:not(.footnotes) > ol > li:before {
+  content:"Exercise " counter(li); /* Use the counter as content */
+  counter-increment:li; /* Increment the counter by 1 */
+  /* Position and style the number */
+  position:absolute;
+  top:-2px;
+  left:-2em;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  width:7em;
+  /* Some space between the number and the content in browsers that support
+       generated content but not positioning it (Camino 2 is one example) */
+  margin-right:8px;
+  padding:4px;
+  border-top:2px solid #006633;
+  color:#fff;
+  background:#006633;
+  font-weight:bold;
+  font-family:"Roboto", Arial, sans-serif;
+  text-align:center;
+}
+
+:not(.footnotes) > li ol, :not(.footnotes) > li ul {margin-top:6px;}
+:not(.footnotes) > ol ol li:last-child {margin-bottom:0;}
+
+.oyo ul {
+  list-style: decimal;
+}
+
+.oyo ul li ul {
+  list-style: lower-alpha;
+}
+
+hr {
+  border: 1px solid #006633;
+}
+
+div#boxedtext {
+  background-color: rgba(30, 98, 56, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 10pt;
+}
+
+div#license {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #00909E;
+  border:1px solid #00909E;
+  padding: 10px 10px;
+  background-color: rgba(0, 114, 158, 0.2);
+  border-radius: 5px;
+}

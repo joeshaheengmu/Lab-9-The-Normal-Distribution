@@ -1,0 +1,63 @@
+---
+title: "Lab 10 - Normal distribution"
+author: "Your name"
+date: "Date of lab session"
+output:
+  html_document:
+    fig_height: 4
+    highlight: tango
+    number_sections: no
+    self_contained: yes
+    smart: yes
+    theme: paper
+---
+
+```{r setup, include = FALSE}
+# DO NOT ALTER CODE IN THIS CHUNK
+# Set knitr options
+knitr::opts_chunk$set(echo = TRUE)
+# Load required packages
+suppressPackageStartupMessages(library(tidyverse, quietly = TRUE))
+# Load the dataset and custom function qqnormsim
+bdims <- read_rds("bdims.rds")
+source("qqnormsim.R")
+```
+
+* * *
+
+## Lab report
+
+## Exercises
+
+#### Exercise 1
+
+
+
+
+#### Exercise 2
+
+
+
+
+#### Exercise 3
+
+
+
+
+#### Exercise 4
+
+
+
+
+#### Exercise 5
+
+
+
+
+
+
+
+
+
+
+
